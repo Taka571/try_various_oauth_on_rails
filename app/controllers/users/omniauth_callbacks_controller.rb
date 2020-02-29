@@ -12,6 +12,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     callback_for(:twitter)
   end
 
+  def github
+    callback_for(:github)
+  end
+
   private
 
   # common callback method
